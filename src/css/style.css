@@ -1,0 +1,713 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(17, 17, 17);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container > div {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+.container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(14, minmax(0px, 1fr));
+  grid-template-rows: 55px 90px auto 90px;
+  gap: 1px;
+  grid-auto-flow: dense;
+  background-color: rgb(239, 239, 239);
+  font-size: 0.7rem;
+  max-width: 1280px;
+}
+div.one {
+  grid-column: 1 / 2;
+}
+div.two {
+  grid-column: 2 / -5;
+  font-size: 1.3rem;
+  justify-content: start;
+  align-items: center;
+  font-weight: 800;
+  font-style: italic;
+}
+div.three {
+  grid-column: 11 / -2;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 2px;
+}
+div.four {
+  grid-column: 14 / -1;
+  justify-content: center;
+  align-items: center;
+}
+div.five {
+  grid-column: 1 / 2;
+}
+div.six {
+  grid-column: 2 / -5;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+div.seven {
+  grid-column: 11 / -2;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+div.eight {
+  grid-column: 14 / -1;
+}
+div.nine {
+  grid-column: 1 / 2;
+}
+div.ten {
+  grid-column: 2 / -5;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+}
+div.eleven {
+  grid-column: 11 / -2;
+  flex-direction: column;
+}
+div.twelve {
+  grid-column: 14 / -1;
+}
+div.thirteen {
+  grid-column: 1 / 2;
+}
+div.fourteen {
+  grid-column: 2 / -5;
+  justify-content: space-between;
+  align-items: center;
+}
+div.fifteen {
+  grid-column: 11 / -2;
+}
+div.sixteen {
+  grid-column: 14 / -1;
+}
+span svg {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+div.threeRight span.threeText {
+  color: rgb(239, 239, 239);
+}
+div.threeRight {
+  width: 32%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.threeRight span svg {
+  cursor: pointer;
+}
+div.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+div.theme svg {
+  width: 16px;
+  height: 16px;
+}
+div.six span.sixLeft {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+div.six span.sixRight {
+  font-weight: 500;
+}
+.seven div.sevenLeft {
+  display: flex;
+  width: 100%;
+  height: 49.5%;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  justify-content: space-between;
+  padding: 0px 10px;
+  align-items: center;
+}
+.seven div.sevenRight {
+  display: flex;
+  width: 100%;
+  height: 49.5%;
+  justify-content: space-between;
+  padding: 0px 10px;
+  align-items: center;
+}
+.seven span.value {
+  width: 60px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center;
+  background: black;
+  color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 3px 0px;
+  cursor: pointer;
+}
+.ten div.tenUp {
+  display: flex;
+  flex-direction: column;
+}
+.ten div.tenUp div span.amount {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.ten div.tenUp div span.currency {
+  font-weight: 400;
+  color: silver;
+  padding-left: 5px;
+}
+.ten div.tenUp span.total {
+  font-weight: 100;
+  padding: 0px 50px 10px;
+}
+.ten div.tenUp div.tableTen {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5px;
+}
+.ten div.tenUp div.tableTen span.add {
+  padding-top: 105px;
+}
+.ten div.tenUp div.tableTen span.add svg {
+  margin: 11px 8px;
+  width: 1.6rem;
+  text-align: center;
+  height: 1.6rem;
+  cursor: pointer;
+}
+.ten div.tenUp div.table {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 403px 320px;
+  grid-template-rows: 48px auto;
+  gap: 2px;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.ten div.tenUp div.table div {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(239, 239, 239);
+  display: flex;
+  padding: 0px 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ten div.tenUp div.table div.tenTableLeft {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.ten div.tenUp div.table div.tenTableLeft span svg {
+  cursor: pointer;
+}
+
+.ten div.tenUp div.table div.tenTableRight {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.ten div.tenUp div.table div.selection {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+.ten div.tenUp div.table div.selection span {
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.ten div.tenUp div.table div.selection span svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 5px;
+  cursor: auto;
+}
+.ten div.tenUp div.table label.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 23px;
+  margin: 0px;
+}
+.ten div.tenUp div.table div.slider {
+  position: absolute;
+  inset: 0px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+  transition: all 0.4s ease 0s;
+  border-radius: 14px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+.ten div.tenUp div.table label.switch input {
+  display: none;
+}
+.ten div.tenUp div.table div.slider::before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 1px;
+  bottom: 2px;
+  background-color: silver;
+  transition: all 0.4s ease 0s;
+  border-radius: 10px;
+}
+input:checked + .slider {
+  background-color: rgb(70, 66, 66);
+}
+input:checked + .slider::before {
+  transform: translateX(13px);
+}
+.ten div.tenUp div.table div.information {
+  border: none;
+  padding: 0px;
+}
+.ten div.tenUp div.table div.information span svg {
+  margin-left: 8px;
+}
+.ten div.tenUp div.table div.tenFirstColumn {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  grid-template-rows: auto;
+  border: none;
+  padding: 0px;
+  gap: 2px;
+}
+
+.ten div.tenUp div.table div.tenFirstColumn div {
+  height: 40px;
+}
+
+.ten div.tenUp div.table div.tenFirstColumn div.tenOne {
+  border-top-left-radius: 6px;
+  grid-column: 1 / 2;
+  height: 30px;
+  font-weight: 700;
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenTwo {
+  grid-column: 2 / 3;
+  height: 30px;
+  font-weight: 700;
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenThree {
+  grid-column: 3 / -1;
+  height: 30px;
+  font-weight: 700;
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenFour {
+  grid-column: 1 / 2;
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenFive {
+  grid-column: 2 / 3;
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenSix {
+  grid-column: 3 / -1;
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenSeven {
+  grid-column: 1 / 2;
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenEight {
+  grid-column: 2 / 3;
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenNine {
+  grid-column: 3 / -1;
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenTen {
+  grid-column: 1 / 2;
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenEleven {
+  grid-column: 2 / 3;
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenTwelve {
+  grid-column: 3 / -1;
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenThirteen {
+  border-bottom-left-radius: 6px;
+  grid-column: 1 / 2;
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenFourteen {
+  grid-column: 2 / 3;
+}
+.ten div.tenUp div.table div.tenFirstColumn div.tenFifteen {
+  grid-column: 3 / -1;
+}
+.ten div.tenUp div.table div.tenSecondColumn {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  grid-template-rows: auto;
+  border: none;
+  padding: 0px;
+  gap: 2px;
+}
+.ten div.tenUp div.table div.tenSecondColumn div {
+  height: 40px;
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenOne {
+  height: 30px;
+  font-weight: 700;
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenTwo {
+  height: 30px;
+  border-top-right-radius: 6px;
+  font-weight: 700;
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenThree {
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenFour {
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenFive {
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenSix {
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenSeven {
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenEight {
+  background: rgb(239, 239, 239);
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenNine {
+}
+.ten div.tenUp div.table div.tenSecondColumn div.tenTen {
+  border-bottom-right-radius: 6px;
+}
+.ten div.tenDown {
+  display: flex;
+  height: 48px;
+  background: rgb(239, 239, 239);
+  align-items: center;
+  padding: 0px 24px;
+}
+.ten div.tenDown div {
+  display: flex;
+  padding: 0px 20px;
+}
+.ten div.tenDown span.textTenDown {
+  color: silver;
+  padding-left: 10px;
+}
+.ten div.tenDown div span {
+  padding: 0px 6px;
+}
+.ten div.tenDown div span svg {
+  height: 1rem;
+  width: 1rem;
+}
+.eleven div.firstEleven {
+  border-bottom: 1px solid rgb(239, 239, 239);
+  height: 48.55px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.eleven div.firstEleven span {
+  margin: 0px 10px;
+  padding: 5px 0px;
+}
+.eleven div.firstEleven > span:nth-child(n) {
+  border-bottom: 1px solid rgb(17, 17, 17);
+  font-weight: 500;
+  cursor: pointer;
+}
+.eleven div.firstEleven > span:nth-child(2n) {
+  border: none;
+  font-weight: 400;
+}
+.eleven div.secondEleven {
+  display: flex;
+  padding: 0px 10px;
+  flex-direction: column;
+}
+.eleven div.secondEleven h4 {
+  font-size: 1.3rem;
+  padding: 6px 0px;
+  font-weight: 500;
+}
+.eleven div.secondEleven div.elevenLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44.55px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.eleven div.secondEleven div.elevenRight {
+  display: flex;
+  align-items: center;
+  height: 44.55px;
+  cursor: pointer;
+}
+.eleven div.secondEleven div section {
+  display: flex;
+  align-items: center;
+}
+.eleven div.secondEleven div section span svg {
+  border: 1px solid black;
+  stroke: black;
+  border-radius: 9px;
+}
+.eleven span svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.eleven span {
+  padding-right: 6px;
+}
+.eleven div.thirdEleven {
+  display: flex;
+  padding-left: 10px;
+  border-top: 1px solid rgb(239, 239, 239);
+  border-bottom: 1px solid rgb(239, 239, 239);
+  height: 48.55px;
+  align-items: center;
+  cursor: pointer;
+}
+.eleven div.fourthEleven {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 48.55px;
+  cursor: pointer;
+}
+.fourteen button {
+  border: 1px solid rgb(239, 239, 239);
+  width: 6.5rem;
+  height: 2.6rem;
+  border-radius: 12px;
+  margin: 0px 50px;
+  cursor: pointer;
+}
+.fourteen .btnNext {
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+}
+.fourteen .btnNext:hover {
+  outline: silver solid 1px;
+  background-color: rgb(73, 73, 73);
+}
+.fourteen .btnClear:hover {
+  outline: silver solid 1px;
+  background-color: rgb(239, 239, 239);
+}
+.fifteen div {
+  border: 1px solid rgb(239, 239, 239);
+  background-color: rgb(239, 239, 239);
+  width: 100%;
+  height: 44.55px;
+  margin-left: 8px;
+  margin-top: 4px;
+}
+.sixteen div {
+  border: 1px solid rgb(239, 239, 239);
+  background-color: rgb(239, 239, 239);
+  width: 5%;
+  height: 44.75px;
+  margin-top: 4px;
+}
+@media only screen and (max-width: 1352px) {
+  .container {
+  }
+  div.two,
+  div.six,
+  div.ten,
+  div.fourteen {
+    grid-column: 2 / 10;
+  }
+  div.three,
+  div.seven,
+  div.eleven,
+  div.fifteen {
+    grid-column: 10 / 14;
+  }
+  .ten div.tenUp div.table {
+    grid-template-columns: 2fr 1.5fr;
+    width: 100%;
+  }
+  /* .ten div.tenUp div.table div {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(239, 239, 239);
+    display: flex;
+    padding: 0px 6px;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  .ten div.tenUp div.table div.tenFirstColumn {
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+  }
+  .ten div.tenUp div.table div.tenSecondColumn {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    grid-template-rows: auto;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  div.two,
+  div.six,
+  div.fourteen {
+    grid-column: 2 / 11;
+  }
+  div.three,
+  div.seven,
+  div.eleven,
+  div.fifteen {
+    grid-column: 11 / 14;
+  }
+  div.ten {
+    height: 600px;
+    grid-column: 2 / 11;
+  }
+  .ten div.tenUp div.table div.tenFirstColumn {
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+  }
+  .ten div.tenUp div.table div.tenSecondColumn {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+@media only screen and (max-width: 1096px) {
+  div.two,
+  div.six,
+  div.fourteen {
+    grid-column: 2 / 10;
+  }
+  div.three,
+  div.seven,
+  div.eleven {
+    grid-column: 10 / 14;
+  }
+  div.ten {
+    grid-column: 2 / 10;
+  }
+  .ten div.tenUp div.table {
+    display: flex;
+    flex-direction: column;
+  }
+  .ten div.tenUp div.table div.tenTableLeft {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .ten div.tenUp div.table div.tenTableRight {
+    height: 36px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .ten div.tenUp div.table div.tenFirstColumn div.tenThree {
+    border-top-right-radius: 6px;
+  }
+  .ten div.tenUp div.table div.tenFirstColumn div.tenFifteen {
+    border-bottom-right-radius: 6px;
+  }
+  .ten div.tenUp div.table div.tenSecondColumn div.tenOne {
+    border-top-left-radius: 6px;
+  }
+  .ten div.tenUp div.table div.tenSecondColumn div.tenNine {
+    border-bottom-left-radius: 6px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-rows: 55px 90px auto auto 90px;
+  }
+  div.two,
+  div.six,
+  div.fourteen {
+    grid-column: 2 / 8;
+  }
+  div.three,
+  div.seven {
+    grid-column: 8 / 14;
+  }
+  div.ten {
+    grid-column: 2 / 14;
+    height: 620px;
+  }
+  div.eleven {
+    grid-column: 2 / 14;
+  }
+  div.fourteen {
+    grid-column: 2 / 14;
+  }
+  .ten div.tenUp div.table {
+    width: 85%;
+  }
+  .ten div.tenUp div.table div.tenFirstColumn {
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+  }
+  .ten div.tenUp div.table div.tenSecondColumn {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+@media only screen and (max-width: 730px) {
+  div.two,
+  div.six {
+    grid-column: 2 / 9;
+  }
+  div.three,
+  div.seven {
+    grid-column: 9 / 14;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container {
+    grid-template-rows: 55px 90px 90px auto auto 90px;
+  }
+  div.two {
+    grid-column: 2 / 8;
+  }
+  div.six,
+  div.seven,
+  div.eleven,
+  div.fourteen {
+    grid-column: 2 / 14;
+  }
+  div.three {
+    grid-column: 8 / 14;
+  }
+  div.ten {
+    height: 600px;
+    grid-column: 2 / 14;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .ten div.tenUp div.table div.tenFirstColumn {
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+}
