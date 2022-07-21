@@ -69,67 +69,63 @@ export default function Home() {
             <span className="font-normal text-slate-200 pl-2">0.00 ETH</span>
           </div>
           <span className="font-thin total pl-14 pt-1">Total amount</span>
-          <div className="flex justify-start pl-4 mt-4 sm:pl-0.5 sm:justify-center">
-            <span className="add">
-              <Image src={Add} alt="Plus" width={28} height={28} />
-            </span>
-            <div className="table">
-              <div className="tenTableLeft rounded-l-md">
-                <div className="selection flex justify-between pl-0">
-                  <span>
-                    <Image src={sLetter} alt="Token" />
-                  </span>
-                  Select token
-                </div>
-                <span className="logo cursor-pointer">
-                  <Image src={arrowDown} alt="Arrow Down" />
+          <span className="add">
+            <Image src={Add} alt="Plus" width={28} height={28} />
+          </span>
+          <div className="table">
+            <div className="tenTableLeft rounded-l-md">
+              <div className="selection flex justify-between pl-0">
+                <span>
+                  <Image src={sLetter} alt="Token" />
+                </span>
+                Select token
+              </div>
+              <span className="logo cursor-pointer">
+                <Image src={arrowDown} alt="Arrow Down" />
+              </span>
+            </div>
+            <div className="tenTableRight rounded-r-md">
+              <div className="information p-0">
+                Deflationary
+                <span className="logo ml-2">
+                  <Image src={Information} alt="Information" />
                 </span>
               </div>
-              <div className="tenTableRight rounded-r-md">
-                <div className="information p-0">
-                  Deflationary
-                  <span className="logo ml-2">
-                    <Image src={Information} alt="Information" />
-                  </span>
-                </div>
-                <label className="switch">
-                  <input type="checkbox" />
-                  <div className="slider bg-slate-200"></div>
-                </label>
+              <label className="switch">
+                <input type="checkbox" />
+                <div className="slider bg-slate-200"></div>
+              </label>
+            </div>
+            <div className="tenFirstColumn">
+              <div className="tenOneRowSize tenOneCol rounded-tl-md">
+                Address
               </div>
-              <div className="tenFirstColumn">
-                <div className="tenOneRowSize tenOneCol rounded-tl-md">
-                  Address
-                </div>
-                <div className="tenTwoCol tenOneRowSize">Amount</div>
-                <div className="tenThreeCol tenOneRowSize">Email(Optional)</div>
-                <div className="tenOneCol ashColor">0×203...dfa7</div>
-                <div className="tenTwoCol ashColor">7,500</div>
-                <div className="tenThreeCol ashColor">example@email.com</div>
-                <div className="tenOneCol">0×203...dfa7</div>
-                <div className="tenTwoCol">7,500</div>
-                <div className="tenThreeCol">example@email.com</div>
-                <div className="tenOneCol ashColor">0×203...dfa7</div>
-                <div className="tenTwoCol ashColor">7,500</div>
-                <div className="tenThreeCol ashColor">example@email.com</div>
-                <div className="tenOneCol rounded-bl-md">0×203...dfa7</div>
-                <div className="tenTwoCol">7,500</div>
-                <div className="tenThreeCol">example@email.com</div>
-              </div>
-              <div className="tenSecondColumn">
-                <div className="tenOneRowSize">Name(Optional)</div>
-                <div className="tenOneRowSize rounded-tr-md">
-                  Notes(Optional)
-                </div>
-                <div className="tenThree ashColor">Pollen TG</div>
-                <div className="tenFour ashColor">March 2022 bill</div>
-                <div className="tenFive">Pollen TG</div>
-                <div className="tenSix">March 2022 bill</div>
-                <div className="tenSeven ashColor">Pollen TG</div>
-                <div className="tenEight ashColor">March 2022 bill</div>
-                <div className="tenNine">Pollen TG</div>
-                <div className="tenTen rounded-br-md">March 2022 bill</div>
-              </div>
+              <div className="tenTwoCol tenOneRowSize">Amount</div>
+              <div className="tenThreeCol tenOneRowSize">Email(Optional)</div>
+              <div className="tenOneCol ashColor">0×203...dfa7</div>
+              <div className="tenTwoCol ashColor">7,500</div>
+              <div className="tenThreeCol ashColor">example@email.com</div>
+              <div className="tenOneCol">0×203...dfa7</div>
+              <div className="tenTwoCol">7,500</div>
+              <div className="tenThreeCol">example@email.com</div>
+              <div className="tenOneCol ashColor">0×203...dfa7</div>
+              <div className="tenTwoCol ashColor">7,500</div>
+              <div className="tenThreeCol ashColor">example@email.com</div>
+              <div className="tenOneCol rounded-bl-md">0×203...dfa7</div>
+              <div className="tenTwoCol">7,500</div>
+              <div className="tenThreeCol">example@email.com</div>
+            </div>
+            <div className="tenSecondColumn">
+              <div className="tenOneRowSize">Name(Optional)</div>
+              <div className="tenOneRowSize rounded-tr-md">Notes(Optional)</div>
+              <div className="tenThree ashColor">Pollen TG</div>
+              <div className="tenFour ashColor">March 2022 bill</div>
+              <div className="tenFive">Pollen TG</div>
+              <div className="tenSix">March 2022 bill</div>
+              <div className="tenSeven ashColor">Pollen TG</div>
+              <div className="tenEight ashColor">March 2022 bill</div>
+              <div className="tenNine">Pollen TG</div>
+              <div className="tenTen rounded-br-md">March 2022 bill</div>
             </div>
           </div>
         </div>

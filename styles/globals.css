@@ -166,12 +166,13 @@ a {
   }
 
   span.add {
-    padding-top: 105px;
-    margin: 11px 0px;
+    left: calc(10% - 20px);
+    bottom: calc(50% - 100px);
     /* width: 2rem; */
     text-align: center;
     /* height: 2rem; */
     cursor: pointer;
+    position: absolute;
   }
 
   .table {
@@ -181,7 +182,7 @@ a {
     grid-template-rows: 48px auto;
     gap: 2px;
     justify-content: center;
-    /* margin-right: 56px; */
+    margin-top: 15px;
     padding-right: 32px;
   }
 
@@ -315,9 +316,10 @@ a {
       grid-column: 10 / 14;
     }
 
-    div.table {
+    .table {
       grid-template-columns: 2fr 1.5fr;
-      width: 100%;
+      width: 90%;
+      margin-left: 50px;
     }
 
     /* div.tableDiv {
@@ -355,6 +357,7 @@ a {
       height: 600px;
       grid-column: 2 / 11;
     }
+
     div.tenFirstColumn {
       grid-template-columns: repeat(4, minmax(0px, 1fr));
     }
@@ -377,7 +380,12 @@ a {
     div.ten {
       grid-column: 2 / 10;
     }
-    div.table {
+
+    span.add {
+      left: calc(10% - 20px);
+    }
+
+    .table {
       display: flex;
       flex-direction: column;
     }
@@ -426,7 +434,7 @@ a {
     div.fourteen {
       grid-column: 2 / 14;
     }
-    div.table {
+    .table {
       width: 85%;
     }
     div.tenFirstColumn {
@@ -444,6 +452,10 @@ a {
     div.three,
     div.seven {
       grid-column: 9 / 14;
+    }
+
+    span.add {
+      left: calc(12% - 20px);
     }
   }
   @media only screen and (max-width: 690px) {
@@ -466,6 +478,7 @@ a {
       height: 650px;
       grid-column: 2 / 14;
     }
+
     div.tenFirstColumn {
       grid-template-columns: 1fr 0.8fr 2fr;
     }
@@ -481,16 +494,20 @@ a {
     }
 
     span.add {
-      padding-top: 8px;
-      padding-right: 2px;
-      margin: 0px;
+      top: calc(56% - 100px);
+      left: calc(82% - 0px);
     }
 
-    .table {
+    div.table {
+      width: 97%;
       padding-right: 0px;
+      margin-left: 6px;
     }
 
     div.tenFirstColumn {
+      grid-template-columns: 1fr 0.5fr 3fr;
+    }
+    div.tenSecondColumn {
       grid-template-columns: 1fr 0.5fr 2fr;
     }
   }
