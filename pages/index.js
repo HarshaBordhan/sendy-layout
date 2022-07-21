@@ -69,7 +69,7 @@ export default function Home() {
             <span className="font-normal text-slate-200 pl-2">0.00 ETH</span>
           </div>
           <span className="font-thin total pl-14 pt-1">Total amount</span>
-          <div className="flex justify-start pl-4 mt-4">
+          <div className="flex justify-start pl-4 mt-4 sm:pl-0.5">
             <span className="add">
               <Image src={Add} alt="Plus" width={28} height={28} />
             </span>
