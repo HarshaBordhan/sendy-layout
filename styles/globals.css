@@ -494,14 +494,12 @@ a {
     }
 
     span.add {
-      top: calc(56% - 100px);
-      left: calc(82% - 0px);
+      left: calc(14% - 18px);
     }
 
     div.table {
-      width: 97%;
-      padding-right: 0px;
-      margin-left: 6px;
+      width: 90%;
+      padding-right: 14px;
     }
 
     div.tenFirstColumn {

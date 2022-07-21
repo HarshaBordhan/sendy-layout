@@ -72,7 +72,7 @@ export default function Home() {
           <span className="add">
             <Image src={Add} alt="Plus" width={28} height={28} />
           </span>
-          <div className="table">
+          <div className="table sm:text-xs">
             <div className="tenTableLeft rounded-l-md">
               <div className="selection flex justify-between pl-0">
                 <span>
